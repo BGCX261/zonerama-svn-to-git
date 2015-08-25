@@ -1,0 +1,18 @@
+#how to install zonerama
+
+= Details =
+
+Installation is the same like on every other qt application. Make sure to read the [Requirements] first.
+
+  # Download and extract source code
+  # *cd* to the source directory
+  # run *qmake*
+  # run *make*
+  # you now should have a *Zonerama* binary.
+  # create one or more merged monitor in Zoneminder:
+    * Source: Local
+    * Function: None
+    * set width and height to equal outputImageHeight/Width
+    * Other options are not needet, leave them default if unsure. So sourcepath /dev/video is okay, it isnt used anyway.
+  # edit *zonerama.conf* to fit your needs, read [Configuration] carefully.
+  # configure your mysql server correctly with group_concat_max_len and max_allowed_packet. See [Requirements] for details.
